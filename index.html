@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="card">
+
+        <h2>🌡️ Temperature Converter</h2>
+
+        <div class="input-group">
+            <label>Enter Temperature</label>
+            <input type="number" id="tempInput" placeholder="e.g. 37">
+            <div id="error" class="error"></div>
+        </div>
+
+        <div class="input-group">
+            <label>From Unit</label>
+            <select id="fromUnit">
+                <option value="C">Celsius (°C)</option>
+                <option value="F">Fahrenheit (°F)</option>
+                <option value="K">Kelvin (K)</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>To Unit</label>
+            <select id="toUnit">
+                <option value="F">Fahrenheit (°F)</option>
+                <option value="C">Celsius (°C)</option>
+                <option value="K">Kelvin (K)</option>
+            </select>
+        </div>
+
+        <div class="buttons">
+            <button class="swap" id="swapBtn">🔄 Swap</button>
+            <button class="convert" id="convertBtn" disabled>Convert</button>
+        </div>
+
+        <div id="result" class="result">Result will appear here</div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
